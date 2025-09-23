@@ -1,0 +1,67 @@
+diff between function and method in java,javascript,python
+
+
+Java
+In Java, everything is object-oriented, so all code must be inside classes.
+
+java
+class Calculator {
+    // Method - belongs to Calculator class
+    public int add(int a, int b) {
+        return a + b;
+    }
+    
+    // Static method - can be called without object instance
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        int result = calc.add(5, 3); // Method call
+    }
+}
+Java doesn't have true standalone functions - even main() is a static method of a class.
+
+
+JavaScript
+JavaScript supports both functions and methods clearly
+// Function - standalone
+function greet(name) {
+    return "Hello " + name;
+}
+
+// Method - belongs to object
+const person = {
+    name: "Alice",
+    greet: function() {
+        return "Hello " + this.name; // Accesses object data
+    }
+};
+
+// Usage
+console.log(greet("Bob"));        // Function call
+console.log(person.greet());      // Method call
+Key difference: Methods in JavaScript can access object properties using this, while functions only work with passed parameters.
+
+Python
+Python has the clearest distinction between functions and methods
+# Function - standalone
+def greet_function(name):
+    return f"Hello, {name}!"
+
+# Method - inside class
+class Greeter:
+    def __init__(self, name):
+        self.name = name
+    
+    def greet_method(self):  # Method has 'self' parameter
+        return f"Hello, {self.name}!"
+
+# Usage
+print(greet_function("Alice"))    # Function call
+
+greeter = Greeter("Bob")
+print(greeter.greet_method())     # Method call
+Python specifics: Methods always have self as the first parameter, giving access to the instance's data
+
+Java: Everything is a method within classes; no standalone functions
+JavaScript: Functions exist independently; methods are object properties
+Python: Clear separation with self parameter distinguishing methods from functions
+<img width="1065" height="333" alt="Screenshot 2025-09-23 232424" src="https://github.com/user-attachments/assets/c4cbec75-ff64-4f55-ac6e-5b46b1c4ad13" />
