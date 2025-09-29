@@ -11,3 +11,6 @@ print("Hello {} and welcome!".format(name))
 
 # Old style formatting
 print("Name: %s, Age: %d" % (name, age))
+
+print(type(name))
+print(type(age))
