@@ -65,3 +65,8 @@ Java: Everything is a method within classes; no standalone functions
 JavaScript: Functions exist independently; methods are object properties
 Python: Clear separation with self parameter distinguishing methods from functions
 <img width="1065" height="333" alt="Screenshot 2025-09-23 232424" src="https://github.com/user-attachments/assets/c4cbec75-ff64-4f55-ac6e-5b46b1c4ad13" />
+
+
+From a function's perspective:
+A parameter is the variable listed inside the parentheses in the function definition.
+An argument is the value that is sent to the function when it is called.
